@@ -1,0 +1,77 @@
+.features {
+  .wrap
+}
+.features__title {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+  color: #000000;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+.features__list {
+  margin-bottom: 42px;
+  padding: 0;
+}
+.features__item {
+  position: relative;
+  padding: 3px 0px 3px 80px;
+  margin-bottom: 20px;
+  font-style: 14px;
+  line-height: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+
+  }
+  &--nutrient::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/advantage-leaf@1x.png);
+    background-repeat: no-repeat;
+  }
+  &--cooking::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/advantage-powder@1x.png);
+    background-repeat: no-repeat;
+  }
+  &--meal::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/advantage-dining@1x.png);
+    background-repeat: no-repeat;
+  }
+  &--time::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/advantage-clock@1x.png);
+    background-repeat: no-repeat;
+  }
+}
+.features__description {
+  margin: 0;
+}
