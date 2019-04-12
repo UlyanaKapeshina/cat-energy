@@ -16,3 +16,26 @@
   text-transform: uppercase;
   color: @title-color;
 }
+
+@media (min-width: @tablet-width) {
+
+  .more-catalog__button {
+    width: 250px;
+  }
+
+  .more-catalog {
+    height: 430px;
+    background: #ffffff;
+    border: 1px solid @border-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .more-catalog__button {
+    width: 170px;
+  }
+}

@@ -16,3 +16,23 @@
 .product__picture {
   display: inline-block;
 }
+
+@media (min-width: @tablet-width) {
+  .product {
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: @grey-color;
+  }
+
+  .product__button {
+    width: 250px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__button {
+    width: 170px;
+  }
+}
