@@ -1,15 +1,19 @@
-.series {
-  .wrap;
+.series__inner {
+  width: 320px;
+  margin: 0 auto;
   padding: 0 20px;
 }
+
 .series__list {
   .list-reset;
 }
+
 .series__item {
   background-color: @grey-color;
   padding: 0 20px;
   margin-bottom: 20px;
 }
+
 .series__title {
   .reset;
   position: relative;
@@ -18,9 +22,9 @@
   font-size: 24px;
   line-height: 37px;
   color: @title-color;
-  padding: 30px 0 45px 72px;;
-  font-weight: normal;
+  padding: 30px 0 45px 72px;
 
+  font-weight: normal;
 
   &::before {
     content: "";
@@ -41,7 +45,7 @@
       top: 22px;
       width: 36px;
       height: 49px;
-      background-image: url(../img/icon-cat-slim.svg);
+      background-image: url("../img/icon-cat-slim.svg");
       background-repeat: no-repeat;
     }
   }
@@ -54,12 +58,11 @@
       top: 36px;
       width: 67px;
       height: 28px;
-      background-image: url(../img/icon-cat-pro.svg);
+      background-image: url("../img/icon-cat-pro.svg");
       background-repeat: no-repeat;
     }
   }
 }
-
 
 .series__description {
   padding-bottom: 21px;
@@ -67,6 +70,7 @@
   margin-bottom: 19px;
   border-bottom: 1px solid @border-color;
 }
+
 .series__link {
   display: block;
   font-family: "OswaldRegular", "Arial", sans-serif;
@@ -75,4 +79,36 @@
   line-height: 16px;
   color: @title-color;
   padding-bottom: 25px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .series__inner {
+    width: 768px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .series__item {
+    min-height: 372px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .series__inner {
+    width: 1300px;
+    padding: 0 40px;
+  }
+
+  .series__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .series__item {
+    width: 570px;
+  }
 }

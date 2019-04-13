@@ -4,15 +4,38 @@
   border-bottom: 1px solid @border-color;
   color: @text-color;
 }
+
 .more-catalog__button {
   margin: 0 auto;
 }
 
 .more-catalog__title {
-    font-family: "OswaldRegular", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: @title-color;
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @title-color;
+}
 
+@media (min-width: @tablet-width) {
+
+  .more-catalog__button {
+    width: 250px;
+  }
+
+  .more-catalog {
+    height: 430px;
+    background: #ffffff;
+    border: 1px solid @border-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .more-catalog__button {
+    width: 170px;
+  }
 }

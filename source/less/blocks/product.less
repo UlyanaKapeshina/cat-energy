@@ -2,6 +2,7 @@
   border-bottom: 1px solid @border-color;
   padding: 21px 20px 24px 20px;
 }
+
 .product__title {
   display: inline-block;
   font-family: "OswaldRegular", "Arial", sans-serif;
@@ -12,8 +13,26 @@
   text-align: center;
 }
 
-.product__button {
-}
 .product__picture {
   display: inline-block;
+}
+
+@media (min-width: @tablet-width) {
+  .product {
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: @grey-color;
+  }
+
+  .product__button {
+    width: 250px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__button {
+    width: 170px;
+  }
 }
