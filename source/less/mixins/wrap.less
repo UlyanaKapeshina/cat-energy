@@ -1,4 +1,12 @@
-.wrap(@width: 320px) {
-  width: @width;
+.wrap {
+  width: 320px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+
+    width: 768px;
+    padding: 0 20px;
+
 }

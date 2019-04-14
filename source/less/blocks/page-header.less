@@ -1,6 +1,5 @@
 .page-header__inner {
-  width: 320px;
-  margin: 0 auto;
+ .wrap;
   display: flex;
   flex-direction: column;
 }
@@ -22,9 +21,9 @@
 
 @media (min-width: @tablet-width) {
   .page-header__inner {
+    .wrap;
     min-height: 110px;
-    width: 768px;
-    padding: 0 30px;
+
     flex-direction: row;
     justify-content: space-between;
   }
@@ -33,10 +32,6 @@
     border: none;
     padding: 0;
   }
-
-  // .page-header__toggle {
-  //   display: none;
-  // }
 }
 
 @media (min-width: @desktop-width) {
