@@ -1,26 +1,4 @@
-// .promo__bg {
-//   position: absolute;
-//   width: 100%;
-//   height: 305px;
-//   background-color: #65a93c;
-//   display: flex;
-//   justify-content: center;
-//   margin: auto;
-//   left: 0;
-//   right: 0;
-//   // z-index: -1;
-// }
-.promo__bg img {
-  display: block;
-  position: absolute;
-  width: 320px;
-  height: 305px;
-  //
-  width: 320px;
-  margin: 0 auto;
-}
-
-.promo__wrapper {
+.promo {
   position: relative;
 
   &::after {
@@ -80,7 +58,6 @@
 
 .promo__picture {
   .reset;
-  // position: absolute;
 }
 
 .promo__image {
@@ -94,7 +71,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .promo__wrapper {
+  .promo {
     &::after {
       display: none;
     }
@@ -105,9 +82,10 @@
   }
 
   .promo__inner {
+    position: relative;
     width: @tablet-width;
-    min-height: 840px;
-    padding: 40px 30px 0 120px;
+
+    padding: 40px 162px 0 120px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -127,39 +105,70 @@
     line-height: 20px;
     color: @title-color;
     text-align: start;
-    margin-bottom: 47px;
+    margin-bottom: 48px;
+  }
+  .promo__picture {
+    position: absolute;
+    top: 232px;
+    right: 30px;
+    z-index: -1;
+  }
+  .promo__button {
+    margin-bottom: 530px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .promo__wrapper {
+  .promo {
     &::after {
       content: "";
       position: absolute;
       top: -175px;
-      left: 0;
+      left: 50%;
       right: 0;
-      transform: translateX(50%);
+      margin: 0;
       background-repeat: no-repeat;
       display: block;
       width: 720px;
       height: 696px;
+
       background-image: url("../img/index-background-desktop@1x.jpg");
+      background-size: cover;
 
     }
 
     &::before {
       display: block;
+      position: absolute;
+      content: "";
       left: 50%;
+      width: calc(50vw - 720px);
+      background-color: #65a93c;
       height: 696px;
       top: -175px;
+      left: auto;
+      right: 0;
     }
   }
 
   .promo__inner {
     width: @desktop-width;
-    min-height: 880px;
-    padding: 40px 110px 0 110px;
+    padding: 56px 690px 0 120px;
     background-position: top right;
+    margin-bottom: 80px;
+  }
+  .promo__slogan {
+    margin-bottom: 52px;
+  }
+  .promo__button {
+    margin-bottom: 190px ;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px 0;
+  }
+  .promo__picture {
+    top: -35px;
+    right: 285px;
+    z-index: 1;
   }
 }
