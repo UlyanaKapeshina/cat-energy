@@ -1,6 +1,6 @@
 .button {
   display: block;
-  width: 280px;
+  width: 100%;
   background-color: @green-color;
   color: @text-color-white;
   border: none;
@@ -19,5 +19,11 @@
   &--big {
     font-size: 20px;
     padding: 16px 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    width: 280px;
   }
 }
