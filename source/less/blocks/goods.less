@@ -1,9 +1,12 @@
+.goods {
+  overflow: hidden;
+}
 .goods__inner {
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-}
 
+}
 .goods__title {
   .reset;
   position: relative;
@@ -13,28 +16,35 @@
   text-align: left;
   font-weight: normal;
   padding-bottom: 30px;
-  border-bottom: 1px solid @border-color;
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   width: calc(50vw - 106px);
-  //   min-width: 53px;
-  //   height: 2px;
-  //   top: 12px;
-  //   left: calc(100% - 33px);
-  //   background-color: @green-color;
 
-  // }
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: calc(50vw - 165px);
-  //   height: 2px;
-  //   top: 12px;
-  //   right: calc(100% + 25px);
-  //   background-color: @green-color;
+  span {
+    padding-right: 24px;
+    background-color: #fff;
+  }
 
-  // }
+  &::after {
+    content: "";
+    width: 100vw;
+    z-index: -1;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    background-color: @green-color;
+
+  }
+
+  &::before {
+    content: "";
+    width: 100vw;
+    z-index: -1;
+    height: 2px;
+    position: absolute;
+    right: 300px;
+    top: 12px;
+    background-color: @green-color;
+
+  }
 }
 
 .goods__list {
@@ -48,6 +58,10 @@
   border-bottom: 1px solid @border-color;
   display: flex;
   flex-direction: column;
+
+  &:first-child {
+    border-top: 1px solid @border-color;
+  }
 }
 
 .goods__item-title {
@@ -118,31 +132,21 @@
     font-size: 36px;
     line-height: 36px;
     padding-bottom: 74px;
-    padding-left: 38px;
-  //   &::after {
-  //   content: "";
-  //   position: absolute;
-  //   width: 100vw;
 
-  //   height: 2px;
-  //   top: 12px;
-  //   left: 100%;
-  //   transform: translateX(-300px);
+    span {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+      &::after {
+        top: 18px;
+      }
+      &::before {
+        top: 18px;
+        right: 0;
+      }
+    }
 
-  //   background-color: @green-color;
 
-  // }
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: calc(50vw - 354px);
-  //   height: 2px;
-  //   top: 12px;
-  //   right: calc(100% + 1px);
-  //   background-color: @green-color;
-
-  // }
-  }
 
   .goods__item {
 
@@ -207,6 +211,9 @@
 
   .goods__title {
     width: 895px;
+  }
+  .goods__list {
+    margin-bottom: 86px;
   }
 
   .goods__item {
