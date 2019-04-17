@@ -80,6 +80,7 @@
   font-size: 16px;
   line-height: 16px;
   color: @title-color;
+
   &::after {
     position: absolute;
     content: "";
@@ -90,6 +91,17 @@
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover::after {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    width: 33px;
+    right: -45px;
+  }
+
 }
 
 
@@ -155,8 +167,12 @@
     line-height: 20px;
 
     &::after {
-      right: -47px;
+      right: -49px;
       top: 4px;
+    }
+
+    &:hover::after {
+      right: -58px;
     }
   }
 }
@@ -205,10 +221,12 @@
       }
     }
   }
+
   .series__title {
     padding-left: 164px;
     margin-bottom: 74px;
   }
+
   .series__description {
     margin-bottom: 32px;
   }
