@@ -1,1 +1,248 @@
+.goods__inner {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
+.goods__title {
+  .reset;
+  position: relative;
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  font-weight: normal;
+  padding-bottom: 30px;
+  border-bottom: 1px solid @border-color;
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: calc(50vw - 106px);
+  //   min-width: 53px;
+  //   height: 2px;
+  //   top: 12px;
+  //   left: calc(100% - 33px);
+  //   background-color: @green-color;
+
+  // }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: calc(50vw - 165px);
+  //   height: 2px;
+  //   top: 12px;
+  //   right: calc(100% + 25px);
+  //   background-color: @green-color;
+
+  // }
+}
+
+.goods__list {
+  .list-reset;
+  margin-bottom: 39px;
+}
+
+.goods__item {
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid @border-color;
+  display: flex;
+  flex-direction: column;
+}
+
+.goods__item-title {
+  .reset;
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 13px;
+}
+
+.goods__table {
+  .reset;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 14px;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.goods__field {
+  .reset;
+  text-align: left;
+}
+
+.goods__value {
+  .reset;
+  text-align: right;
+}
+
+.goods__special {
+  position: relative;
+  padding: 190px 60px 0 60px;
+  min-height: 289px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 60px;
+    top: 66px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../img/icon-gift.svg");
+  }
+}
+
+.goods__special-text {
+  .reset;
+  color: @text-color-white;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .goods__inner {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  .goods__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 74px;
+    padding-left: 38px;
+  //   &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100vw;
+
+  //   height: 2px;
+  //   top: 12px;
+  //   left: 100%;
+  //   transform: translateX(-300px);
+
+  //   background-color: @green-color;
+
+  // }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: calc(50vw - 354px);
+  //   height: 2px;
+  //   top: 12px;
+  //   right: calc(100% + 1px);
+  //   background-color: @green-color;
+
+  // }
+  }
+
+  .goods__item {
+
+    border-bottom: 1px solid @border-color;
+    padding: 26px 38px 28px 38px;
+  }
+
+  .goods__description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  .goods__item-title {
+    .reset;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .goods__table {
+    .reset;
+    font-size: 16px;
+    line-height: 20px;
+    width: 50%;
+  }
+
+  .goods__value {
+    width: 132px;
+    text-align: center;
+  }
+
+  .goods__field {
+    text-align: right;
+  }
+
+  .goods__button {
+    width: 100%;
+  }
+
+  .goods__special {
+    padding-left: 422px;
+    padding-right: 120px;
+    padding-top: 74px;
+    min-height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    &::before {
+      top: 65px;
+      left: 120px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .goods__inner {
+    width: 1300px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .goods__title {
+    width: 895px;
+  }
+
+  .goods__item {
+    padding: 15px 0;
+    width: 895px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .goods__description {
+    .reset;
+    flex-grow: 1;
+    justify-content: space-between;
+
+  }
+
+  .goods__item-title {
+    margin-right: auto;
+  }
+
+  .goods__table {
+    width: 325px;
+  }
+
+  .goods__field {
+    text-align: left;
+  }
+
+  .goods__special {
+    padding: 190px 40px 0 40px;
+    width: 245px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .goods__button {
+    width: 245px;
+  }
+}
