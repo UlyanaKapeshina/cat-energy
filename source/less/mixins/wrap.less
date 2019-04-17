@@ -1,4 +1,22 @@
-.wrap(@width: 320px) {
-  width: @width;
+.wrap {
+  width: 320px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .wrap {
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .wrap {
+    width: 1300px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+
 }

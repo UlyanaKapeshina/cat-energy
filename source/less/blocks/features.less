@@ -11,7 +11,7 @@
   font-family: "OswaldRegular", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
-  text-align: center;
+
   font-weight: normal;
   margin-bottom: 26px;
   color: @title-color;
@@ -22,12 +22,16 @@
 }
 
 .features__item {
-  min-height: 60px;
   position: relative;
+  min-height: 60px;
   padding-left: 80px;
   padding-top: 3px;
   margin-bottom: 20px;
   color: @text-color;
+}
+
+.features__description {
+  margin: 0;
 
   &::before {
     content: "";
@@ -39,61 +43,41 @@
     background-color: @green-color;
   }
 
-  &--nutrient::after {
+  &::after {
     content: "";
     position: absolute;
     top: 5px;
     left: 5px;
     width: 50px;
     height: 50px;
+    background-repeat: no-repeat;
+  }
+
+  &--leaf::after {
     background-image: url("../img/advantage-leaf@1x.png");
-    background-repeat: no-repeat;
   }
 
-  &--cooking::after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 50px;
-    height: 50px;
+  &--powder::after {
     background-image: url("../img/advantage-powder@1x.png");
-    background-repeat: no-repeat;
   }
 
-  &--meal::after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 50px;
-    height: 50px;
+  &--dining::after {
     background-image: url("../img/advantage-dining@1x.png");
-    background-repeat: no-repeat;
   }
 
-  &--time::after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 50px;
-    height: 50px;
+  &--clock::after {
     background-image: url("../img/advantage-clock@1x.png");
-    background-repeat: no-repeat;
   }
-}
-
-.features__description {
-  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .features__inner {
     width: 768px;
-    padding: 0 30px;
+    padding: 0 30px 0 30px;
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid @border-color;
+    margin-bottom: 50px;
   }
 
   .features__list {
@@ -104,7 +88,71 @@
 
   .features__item {
     width: 324px;
-    min-height: 255px;
+    padding-top: 112px;
+    padding-left: 0;
+    min-height: 282px;
+    margin-bottom: 0;
+    margin-top: 36px;
+
+    &::after {
+      position: absolute;
+      content: "1";
+      font-family: "OswaldRegular", "Arial", sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      color: @grey-color;
+      left: 116px;
+      top: -40px;
+      z-index: -1;
+    }
+
+    &--1 {
+      &::after {
+        content: "1";
+      }
+    }
+
+    &--2 {
+      &::after {
+        content: "2";
+      }
+    }
+
+    &--3 {
+      &::after {
+        content: "3";
+      }
+    }
+
+    &--4 {
+      &::after {
+        content: "4";
+      }
+    }
+  }
+
+
+  .features__title {
+    font-size: 60px;
+    margin-bottom: 35px;
+    text-align: left;
+  }
+
+  .features__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 324px;
+    padding-right: 79px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      left: 15px;
+      top: 15px;
+    }
   }
 }
 
@@ -112,9 +160,14 @@
   .features__inner {
     width: 1300px;
     padding: 0 40px;
+    margin-bottom: 38px;
   }
 
   .features__item {
     width: 245px;
+
+    &::after {
+      left: 116px;
+    }
   }
 }
