@@ -36,7 +36,14 @@
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: top center;
-  height: 400px;
+  height: 365px;
+
+  iframe {
+    min-width: 320px;
+    width: 100vw;
+    height: 365px;
+    left: 50%;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -67,6 +74,9 @@
 
   .contacts__map {
     background-image: url("../img/bg-map-tablet@1x.png");
+    iframe {
+      height: 400px;
+    }
   }
 }
 
