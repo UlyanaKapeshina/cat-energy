@@ -27,12 +27,13 @@
 .page-header__logo-image {
   .reset;
   display: block;
+  width: 191px;
+  height: 38px;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__inner {
     width: 768px;
-    // height: 110px;
     padding: 0 30px;
     flex-direction: row;
     justify-content: space-between;
@@ -42,11 +43,18 @@
     border: none;
     padding: 0;
   }
+  .page-header__logo img {
+    width: 173px;
+    height: auto;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__inner {
     width: 1300px;
     padding: 0 40px;
+  }
+  .page-header__logo img {
+    width: 202px;
   }
 }
