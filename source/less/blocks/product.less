@@ -40,6 +40,11 @@
   text-align: right;
 }
 
+.product__picture {
+  width: 140px;
+  height: auto;
+}
+
 .product__image {
   display: block;
   .reset;
@@ -51,18 +56,23 @@
     padding: 164px 37px 40px;
     display: flex;
     flex-direction: column;
-
     background-color: @grey-color;
     border: none;
   }
 
   .product__picture {
+    width: 324px;
+    height: auto;
     position: absolute;
-    top: 0;
+    // bottom: 310px;
     left: 50%;
-    transform: translateX(-50%);
-
+    transform: translate(-50%);
+    top: -47px;
+    &--big {
+      top: -82px;
+    }
   }
+
 
   .product__description {
     width: 100%;
@@ -97,4 +107,8 @@
   .product__button {
     width: 170px;
   }
+  .product__picture {
+    width: 245px;
+  }
+
 }
