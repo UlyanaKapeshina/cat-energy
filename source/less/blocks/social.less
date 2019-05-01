@@ -12,9 +12,14 @@
   align-items: center;
 }
 
-.social__image {
-  .reset;
-  display: block;
+.social__icon {
+  fill: #666666;
+  &:hover {
+    fill: @green-color;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__item {
@@ -27,4 +32,24 @@
   .social {
     border: none;
   }
+  .social__icon {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }
