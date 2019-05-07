@@ -7,9 +7,10 @@
 
 .contacts__inner {
   width: 320px;
-  padding: 30px 20px 24px 20px;
+  padding: 28px 20px 24px 20px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .contacts__partnership {
@@ -19,12 +20,15 @@
   line-height: 20px;
   text-align: left;
   text-transform: uppercase;
+  width: 140px;
 }
 
 .contacts__adress {
   font-size: 14px;
   line-height: 20px;
-  text-align: right;
+  text-align: left;
+
+  width: 140px;
 }
 
 .contacts__street {
@@ -43,6 +47,7 @@
 
   iframe {
     min-width: 320px;
+    border: none;
     width: 100vw;
     height: 365px;
     left: 50%;
@@ -55,11 +60,15 @@
     &--form {
       background-color: @grey-color;
     }
+    &--catalog {
+      background-color: @grey-color;
+    }
+
   }
 
   .contacts__inner {
     width: 768px;
-    padding: 68px 70px 60px 70px;
+    padding: 65px 70px 55px 70px;
     justify-content: space-between;
   }
 
@@ -73,13 +82,15 @@
   .contacts__adress {
     width: 165px;
     font-size: 16px;
+    text-align: right;
   }
 
   .contacts__street {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
   .contacts__map {
+    height: 400px;
     background-image: url("../img/bg-map-tablet@1x.png");
     iframe {
       height: 400px;
@@ -94,8 +105,9 @@
 
   .contacts__inner {
     position: absolute;
+    padding: 63px 80px 55px 76px;
     width: 570px;
-    top: 56px;
+    top: 96px;
     left: 50%;
     transform: translateX(-610px);
     background-color: #fff;

@@ -16,7 +16,7 @@
   color: @title-color;
   text-align: left;
   font-weight: normal;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
 
   span {
     padding-right: 24px;
@@ -75,6 +75,14 @@
   font-weight: normal;
   text-align: left;
   margin-bottom: 13px;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .goods__table {
@@ -98,8 +106,7 @@
 
 .goods__special {
   position: relative;
-  padding: 190px 60px 0 60px;
-  min-height: 289px;
+  padding: 185px 55px 44px 55px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   margin-bottom: 35px;
@@ -133,33 +140,35 @@
   .goods__title {
     font-size: 36px;
     line-height: 36px;
-    padding-bottom: 74px;
+    padding-bottom: 80px;
 
     span {
-      padding-right: 40px;
-      padding-left: 40px;
+      padding-right: 37px;
+      padding-left: 37px;
     }
       &::after {
-        top: 18px;
+        top: 22px;
       }
       &::before {
-        top: 18px;
+        top: 22px;
         right: 0;
       }
     }
 
-
+  .goods__list {
+    margin-bottom: 69px;
+  }
 
   .goods__item {
-
     border-bottom: 1px solid @border-color;
-    padding: 26px 38px 28px 38px;
+    padding: 25px 38px 27px 38px;
   }
 
   .goods__description {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
+    align-items: flex-end;
   }
 
   .goods__item-title {
@@ -171,16 +180,18 @@
   .goods__table {
     .reset;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 16px;
     width: 50%;
   }
 
   .goods__value {
-    width: 132px;
-    text-align: center;
+    .reset;
+    width: 94px;
+    text-align: right;
   }
 
   .goods__field {
+    .reset;
     text-align: right;
   }
 
@@ -194,11 +205,15 @@
     padding-top: 74px;
     min-height: 200px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
+    margin-bottom: 75px;
 
     &::before {
       top: 65px;
       left: 120px;
     }
+  }
+  .goods__special-text {
+    text-align: left;
   }
 }
 
@@ -212,14 +227,21 @@
   }
 
   .goods__title {
-    width: 895px;
-  }
+
+    span {
+      padding-left: 0px;
+    }
+      &::before {
+        right: 414px;
+      }
+    }
+
   .goods__list {
     margin-bottom: 86px;
   }
 
   .goods__item {
-    padding: 15px 0;
+    padding: 16px 0 15px 0;
     width: 895px;
     flex-direction: row;
     justify-content: space-between;
@@ -245,10 +267,19 @@
     text-align: left;
   }
 
+  .goods__value {
+    width: 80px;
+    text-align: left;
+  }
+
   .goods__special {
     padding: 190px 40px 0 40px;
     width: 245px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .goods__special-text {
+    text-align: center;
   }
 
   .goods__button {
