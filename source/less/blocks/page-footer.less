@@ -17,18 +17,19 @@
   padding-bottom: 27px;
   padding-top: 38px;
   text-align: center;
-}
 
-.page-footer__logo-icon {
-  fill: @title-color;
-
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 
   &:active {
     opacity: 0.6;
   }
+}
+
+.page-footer__logo-icon {
+  fill: @title-color;
 }
 
 .page-footer__logo-image {
@@ -39,7 +40,7 @@
 @media (min-width: @tablet-width) {
   .page-footer__inner {
     width: 768px;
-    padding: 0 25px 0 30px;
+    padding: 61px 25px 61px 30px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +53,7 @@
   .page-footer__logo {
     width: 165px;
     border: none;
-    padding: 61px 0;
+    padding: 0;
     text-align: left;
   }
 }
@@ -60,7 +61,7 @@
 @media (min-width: @desktop-width) {
   .page-footer__inner {
     width: 1300px;
-    padding: 0 40px;
+    padding: 61px 40px;
     flex-direction: row;
     justify-content: space-between;
   }
