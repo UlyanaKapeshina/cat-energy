@@ -1,0 +1,251 @@
+.example {
+  background-color: @grey-color;
+  padding-top: 17px;
+}
+
+.example__inner {
+  width: 320px;
+  padding: 0 20px 6px 20px;
+  margin: 0 auto;
+}
+
+.example__title {
+  .reset;
+  width: 320px;
+  padding: 0 20px 23px 20px;
+  margin: 0 auto;
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+  text-align: left;
+  color: @title-color;
+  font-weight: normal;
+}
+
+.example__description {
+  .reset;
+  margin-bottom: 24px;
+  padding-right: 1px;
+}
+
+.example__table {
+  .reset;
+  border-collapse: collapse;
+  width: 280px;
+  margin-bottom: 13px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+  tbody {
+    .reset;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.example__row {
+  .reset;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-bottom: 10px;
+
+  &--cost {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+}
+
+.example__value {
+  .reset;
+  display: block;
+  width: 125px;
+  padding: 15px 0;
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: @title-color;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid @border-color;
+  border-radius: 2px;
+}
+
+.example__field {
+  display: block;
+  font-size: 12px;
+  line-height: 12px;
+  transform: translateY(-8px);
+  text-align: center;
+  width: 90px;
+  padding: 0 15px;
+  background-color: @grey-color;
+}
+
+.example__cost {
+  display: block;
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @title-color;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: #ffffff;
+  }
+
+  .example__inner {
+    width: 768px;
+    padding: 0 30px;
+    padding-bottom: 220px;
+  }
+
+  .example__title {
+    width: 768px;
+    padding: 0 30px;
+    font-size: 60px;
+    margin-bottom: 63px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+    padding-right: 10px;
+  }
+
+  .example__table {
+    width: 100%;
+    margin-bottom: 13px;
+
+    tbody {
+      .reset;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: no-wrap;
+    }
+  }
+
+  .example__row {
+    margin-right: 42px;
+
+    &--cost {
+      width: 192px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      margin-right: 0;
+      margin-left: auto;
+      padding-bottom: 15px;
+    }
+  }
+
+  .example__cost {
+    .reset;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .example__value {
+    width: 162px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__field {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+    padding: 0 9px;
+
+    &--weight {
+      width: 115px;
+    }
+
+    &--time {
+      width: 146px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    background-color: #ffffff;
+  }
+
+  .example__wrapper {
+    background-color: @grey-color;
+    display: flex;
+    justify-content: center;
+  }
+
+  .example__inner {
+    margin: 0;
+    width: 650px;
+    padding: 70px 40px 75px 40px;
+  }
+
+  .example__description {
+    width: 435px;
+    margin-bottom: 70px;
+    padding-right: 0;
+  }
+
+  .example__table {
+    .reset;
+    width: 368px;
+
+    tbody {
+      .reset;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  .example__row {
+    margin-right: 0;
+    margin-bottom: 49px;
+    padding: 0;
+
+    &--cost {
+      width: 368px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 0;
+    }
+  }
+
+  .example__cost {
+    .reset;
+    font-size: 20px;
+
+    &--sum {
+      width: 168px;
+      text-align: center;
+      margin-left: auto;
+    }
+  }
+
+  .example__field {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: @grey-color;
+  }
+
+  .example__title {
+    width: 1300px;
+    padding: 0 40px;
+    margin-bottom: 75px;
+  }
+}

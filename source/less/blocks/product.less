@@ -23,6 +23,15 @@
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 12px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__table {
@@ -68,6 +77,7 @@
     left: 50%;
     transform: translate(-50%);
     top: -47px;
+
     &--big {
       top: -82px;
     }
@@ -85,7 +95,6 @@
     width: 150px;
     text-align: center;
     margin-bottom: 21px;
-
   }
 
   .product__table tr {
@@ -107,8 +116,8 @@
   .product__button {
     width: 170px;
   }
+
   .product__picture {
     width: 245px;
   }
-
 }

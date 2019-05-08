@@ -1,11 +1,11 @@
 .social {
   border-bottom: 1px solid @border-color;
-  padding: 21px 0px;
+  padding: 22px 0 17px 0;
 }
 
 .social__list {
   .list-reset;
-  margin: 0 auto;
+  margin: 0 101px 0 93px;
   width: 126px;
   display: flex;
   justify-content: space-between;
@@ -14,15 +14,21 @@
 
 .social__icon {
   fill: #666666;
-  &:hover {
+
+  &:hover,
+  &:focus {
     fill: @green-color;
   }
+
   &:active {
     opacity: 0.3;
   }
 }
 
 .social__item {
+  display: flex;
+  justify-content: center;
+
   &:active {
     opacity: 0.3;
   }
@@ -30,8 +36,15 @@
 
 @media (min-width: @tablet-width) {
   .social {
+    padding: 0;
     border: none;
+    // margin: 0 auto;
   }
+
+  .social__list {
+    margin: 0 auto;
+  }
+
   .social__icon {
     &--vk {
       width: 30px;
@@ -48,8 +61,4 @@
       height: 28px;
     }
   }
-}
-
-@media (min-width: @desktop-width) {
-
 }
