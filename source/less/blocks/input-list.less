@@ -2,7 +2,6 @@
   .list-reset;
   display: flex;
   flex-direction: column;
-
 }
 
 .input-list__item {
@@ -11,7 +10,7 @@
   margin-bottom: 15px;
 }
 
-.input-list__field {  
+.input-list__field {
   height: 45px;
   margin-left: 15px;
   padding: 0 40px 0 14px;
@@ -29,38 +28,45 @@
     color: @placeholder;
   }
 
-  &--email{
+  &--email {
     background-image: url("../img/icon-mail.svg");
     background-size: 55px 13px;
     margin-left: 12px;
+
     &:focus {
       background-image: url("../img/icon-mail-active.svg");
     }
+
     &--error {
       background-image: url("../img/icon-mail-error.svg");
     }
-
   }
+
   &--tel {
     background-image: url("../img/icon-phone.svg");
     background-size: 55px 20px;
     margin-left: 10px;
+
     &:focus {
       background-image: url("../img/icon-phone-active.svg");
     }
-    &--error {
-      background-image: url("../img/icon-phone-error.svg");
-    }
+
+    // &:invalid {
+    //   background-image: url("../img/icon-phone-error.svg");
+    // }
   }
+
   &:hover {
     border-width: 2px;
   }
+
   &:active {
     border: 3px solid @input-active;
   }
-  &--error {
-    border: 3px solid @input-error;
-  }
+
+  // &:invalid {
+  //   border: 3px solid @input-error;
+  // }
 }
 
 .input-list__label {
@@ -76,12 +82,14 @@
   .input-list__item {
     margin-bottom: 23px;
   }
+
   .input-list__field {
     font-size: 20px;
     line-height: 22px;
     padding: 0 19px;
     height: 52px;
     margin-left: 19px;
+
     &--tel {
       margin-left: 16px;
     }
@@ -98,8 +106,8 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
   .input-list__item--contacts {
     width: 570px;
   }
-
 }

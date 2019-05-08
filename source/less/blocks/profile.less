@@ -10,6 +10,7 @@
   margin-bottom: 25px;
   padding-left: 45px;
   cursor: pointer;
+
   &:active {
     opacity: 0.3;
   }
@@ -26,7 +27,7 @@
   padding: 0 30px 0 20px;
 }
 
-.profile__radio+label::before {
+.profile__radio + label::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -36,11 +37,12 @@
   border: 1px solid @checkbox;
   border-radius: 50%;
 }
-.profile__radio:hover+label::before {
+
+.profile__radio:hover + label::before {
   border: 1px solid @checkbox-hover;
 }
 
-.profile__radio:checked+label::after {
+.profile__radio:checked + label::after {
   content: "";
   position: absolute;
   width: 12px;
@@ -52,7 +54,7 @@
   border-radius: 50%;
 }
 
-.profile__checkbox+label::before {
+.profile__checkbox + label::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -60,20 +62,22 @@
   left: 0;
   top: -6px;
   border: 1px solid @checkbox;
+
   &:hover,
-  &:focus, {
+  &:focus {
     border: 1px solid @checkbox-hover;
   }
+
   &:active {
     opacity: 0.3;
   }
 }
 
-.profile__checkbox:hover+label::before {
+.profile__checkbox:hover + label::before {
   border: 1px solid @checkbox-hover;
 }
 
-.profile__checkbox:checked+label::after {
+.profile__checkbox:checked + label::after {
   content: "";
   position: absolute;
   width: 18px;
@@ -82,7 +86,7 @@
   top: 2px;
   border-bottom: 2px solid @green-color;
   border-left: 2px solid @green-color;
-  transform: rotate(-45deg)
+  transform: rotate(-45deg);
 }
 
 
@@ -127,7 +131,7 @@
 
   span {
     padding-right: 24px;
-    background-color: #fff;
+    background-color: #ffffff;
   }
 
   &::after {
@@ -165,10 +169,10 @@
 
   &--additionally {
     margin-bottom: 40px;
+
     &::before {
       right: 188px;
       top: 12px;
-
     }
   }
 }
@@ -189,6 +193,7 @@
   text-transform: uppercase;
   padding: 13px;
   border: 1px solid @border-color;
+
   &::placeholder {
     color: @placeholder;
   }
@@ -212,7 +217,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .profile__description {
     padding: 0;
     width: 384px;
@@ -269,6 +273,7 @@
     line-height: 20px;
     padding-left: 60px;
     margin-bottom: 32px;
+
     &--additionaly {
       width: 286px;
       margin-bottom: 51px;
@@ -294,6 +299,7 @@
 
     &--comments {
       margin-bottom: 75px;
+
       &::before {
         right: 264px;
       }
@@ -301,12 +307,15 @@
 
     &--contacts {
       margin-bottom: 75px;
+
       span {
         padding: 0;
       }
+
       &::before {
         right: 554px;
       }
+
       &::after {
         left: 554px;
       }
@@ -314,33 +323,34 @@
 
     &--additionally {
       margin-bottom: 66px;
+
       &::before {
         right: 294px;
       }
     }
   }
 
-  .profile__radio+label::before {
+  .profile__radio + label::before {
     width: 40px;
     height: 40px;
     top: -10px;
   }
 
-  .profile__radio:checked+label::after {
+  .profile__radio:checked + label::after {
     width: 18px;
     height: 18px;
     left: 11px;
     top: 1px;
   }
 
-  .profile__checkbox+label::before {
+  .profile__checkbox + label::before {
     width: 40px;
     height: 40px;
     top: -10px;
     border: 1px solid @border-color;
   }
 
-  .profile__checkbox:checked+label::after {
+  .profile__checkbox:checked + label::after {
     content: "";
     position: absolute;
     width: 20px;
@@ -350,6 +360,7 @@
     border-bottom: 3px solid @green-color;
     border-left: 3px solid @green-color;
   }
+
   .profile__button {
     width: 285px;
     font-size: 20px;
@@ -357,12 +368,13 @@
     padding: 16px 0;
     margin: 0;
     margin-right: 60px;
-
   }
+
   .profile__notice {
     font-size: 16px;
     margin: 0;
   }
+
   .profile__end {
     display: flex;
     justify-content: flex-start;
@@ -372,27 +384,31 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .profile__about-cat {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 46px;
   }
+
   .profile__cat,
   .profile__want {
     width: 570px;
     margin-bottom: 0;
   }
+
   .profile__label {
     width: 325px;
+
     &--additionaly {
       width: 245px;
     }
   }
+
   .profile__end {
     margin-bottom: 84px;
   }
+
   .profile__additionally {
     margin-bottom: 22px;
   }

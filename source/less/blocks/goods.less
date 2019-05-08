@@ -1,12 +1,13 @@
 .goods {
   overflow: hidden;
 }
+
 .goods__inner {
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-
 }
+
 .goods__title {
   .reset;
   position: relative;
@@ -20,7 +21,7 @@
 
   span {
     padding-right: 24px;
-    background-color: #fff;
+    background-color: #ffffff;
   }
 
   &::after {
@@ -32,7 +33,6 @@
     left: 0;
     top: 12px;
     background-color: @green-color;
-
   }
 
   &::before {
@@ -44,7 +44,6 @@
     right: 300px;
     top: 12px;
     background-color: @green-color;
-
   }
 }
 
@@ -75,6 +74,7 @@
   font-weight: normal;
   text-align: left;
   margin-bottom: 13px;
+
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -107,6 +107,7 @@
 .goods__special {
   position: relative;
   padding: 185px 55px 44px 55px;
+  background-color: #65a93c;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   margin-bottom: 35px;
@@ -146,14 +147,16 @@
       padding-right: 37px;
       padding-left: 37px;
     }
-      &::after {
-        top: 22px;
-      }
-      &::before {
-        top: 22px;
-        right: 0;
-      }
+
+    &::after {
+      top: 22px;
     }
+
+    &::before {
+      top: 22px;
+      right: 0;
+    }
+  }
 
   .goods__list {
     margin-bottom: 69px;
@@ -212,6 +215,7 @@
       left: 120px;
     }
   }
+
   .goods__special-text {
     text-align: left;
   }
@@ -224,17 +228,18 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .goods__title {
-
     span {
-      padding-left: 0px;
+      padding-left: 0;
     }
-      &::before {
-        right: 414px;
-      }
+
+    &::before {
+      right: 414px;
     }
+  }
 
   .goods__list {
     margin-bottom: 86px;
@@ -252,7 +257,6 @@
     .reset;
     flex-grow: 1;
     justify-content: space-between;
-
   }
 
   .goods__item-title {
@@ -273,7 +277,7 @@
   }
 
   .goods__special {
-    padding: 190px 40px 0 40px;
+    padding: 190px 40px 39px 40px;
     width: 245px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
