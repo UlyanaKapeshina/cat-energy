@@ -3,20 +3,18 @@
 }
 
 .goods__inner {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
+  .wrap;
 }
 
 .goods__title {
   .reset;
   position: relative;
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   color: @title-color;
   text-align: left;
-  font-weight: normal;
+  font-weight: 400;
   padding-bottom: 33px;
 
   span {
@@ -66,12 +64,12 @@
 
 .goods__item-title {
   .reset;
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: @title-color;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 400;
   text-align: left;
   margin-bottom: 13px;
 
@@ -133,11 +131,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .goods__inner {
-    width: 768px;
-    padding: 0 30px;
-  }
-
   .goods__title {
     font-size: 36px;
     line-height: 36px;
@@ -223,8 +216,6 @@
 
 @media (min-width: @desktop-width) {
   .goods__inner {
-    width: 1300px;
-    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
