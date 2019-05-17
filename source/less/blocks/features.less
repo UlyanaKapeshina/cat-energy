@@ -1,18 +1,16 @@
 .features__inner {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
+  .wrap;
   margin-bottom: 42px;
 }
 
 .features__title {
   .reset;
   display: block;
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
 
-  font-weight: normal;
+  font-weight: 400;
   margin-bottom: 28px;
   color: @title-color;
 }
@@ -72,8 +70,6 @@
 
 @media (min-width: @tablet-width) {
   .features__inner {
-    width: 768px;
-    padding: 0 30px 0 30px;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
@@ -96,7 +92,8 @@
     &::after {
       position: absolute;
       content: "1";
-      font-family: "OswaldRegular", "Arial", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-weight: 400;
       font-size: 281px;
       line-height: 281px;
       color: @grey-color;
@@ -157,8 +154,6 @@
 
 @media (min-width: @desktop-width) {
   .features__inner {
-    width: 1300px;
-    padding: 0 40px;
     margin-bottom: 10px;
   }
 

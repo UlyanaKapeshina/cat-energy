@@ -5,11 +5,12 @@
 
 .social__list {
   .list-reset;
-  margin: 0 101px 0 93px;
-  width: 126px;
+  margin: 0 auto;
+  width: 162px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .social__icon {
@@ -28,6 +29,9 @@
 .social__item {
   display: flex;
   justify-content: center;
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 22px;
 
   &:active {
     opacity: 0.3;
@@ -38,11 +42,15 @@
   .social {
     padding: 0;
     border: none;
-    // margin: 0 auto;
   }
 
   .social__list {
     margin: 0 auto;
+  }
+
+  .social__item {
+    width: 30px;
+    margin: 0 10px;
   }
 
   .social__icon {

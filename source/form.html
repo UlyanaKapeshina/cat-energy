@@ -19,7 +19,7 @@
 
   <header class="page-header">
     <div class="page-header__inner">
-      <section class="page-header__menu">
+      <div class="page-header__menu">
         <a href="index.html" class="page-header__logo">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
@@ -28,9 +28,9 @@
               alt="Логотип Кэт энерджи">
           </picture>
         </a>
-      </section>
+      </div>
       <nav class="main-nav main-nav--opened main-nav--nojs">
-        <button class="main-nav__toggle " type="button"></button>
+        <button class="main-nav__toggle " type="button" title="Открыть/закрыть меню"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="index.html">Главная</a></li>
           <li class="site-list__item "><a href="catalog.html">Каталог продукции</a></li>
@@ -40,11 +40,10 @@
     </div>
   </header>
   <main class="page-main">
+
     <section class="program">
       <div class="program__inner">
-
         <h1 class="program__title">Подбор программы</h1>
-
         <form action="https://echo.htmlacademy.ru" class="program__profile profile">
           <p class="profile__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <div class="profile__about-cat">
@@ -64,21 +63,19 @@
                 </li>
               </ul>
             </fieldset>
-
             <fieldset class="profile__want profile__fieldset">
               <input type="radio" name="program-type" class="profile__radio visually-hidden" id="lose-weight"
                 value="lose-weight" checked>
-              <label class="profile__label" for="lose-weight">Похудение</label>
+              <label class="profile__label profile__label--want" for="lose-weight">Похудение</label>
               <input type="radio" name="program-type" class="profile__radio visually-hidden" id="weight-gain"
-                value="weight-gain">
-              <label class="profile__label" for="weight-gain">Набор массы</label>
+                value="weight-gain" checked>
+              <label class="profile__label profile__label--want" for="weight-gain">Набор массы</label>
               <input type="radio" name="program-type" class="profile__radio visually-hidden" id="dont-know"
                 value="dont-know">
-              <label class="profile__label" for="dont-know">Не знаю (нужен ваш
+              <label class="profile__label profile__label--want" for="dont-know">Не знаю (нужен ваш
                 совет)</label>
             </fieldset>
           </div>
-
           <fieldset class="profile__contacts profile__fieldset">
             <legend class="profile__legend profile__legend--contacts"><span>Контактные данные </span>(владельца кота)
             </legend>
@@ -95,7 +92,6 @@
               </li>
             </ul>
           </fieldset>
-
           <fieldset class="profile__comments profile__fieldset">
             <legend class="profile__legend profile__legend--comments"><span>Комментарий</span></legend>
             <textarea class="profile__textarea" name="comments"
@@ -137,6 +133,7 @@
           width="600" height="365"></iframe>
       </div>
     </section>
+
   </main>
 
   <footer class="page-footer">

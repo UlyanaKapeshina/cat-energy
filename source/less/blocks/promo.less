@@ -33,14 +33,13 @@
 }
 
 .promo__inner {
-  width: 320px;
-  margin: 0 auto;
+  .wrap;
   padding: 27px 20px 23px 20px;
 }
 
 .promo__title {
   .reset;
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   color: @text-color-white;
@@ -51,7 +50,8 @@
 
 .promo__slogan {
   .reset;
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   color: @text-color-white;
@@ -83,7 +83,6 @@
 
   .promo__inner {
     position: relative;
-    width: 768px;
     padding: 31px 162px 0 118px;
     display: flex;
     flex-direction: column;
@@ -130,10 +129,12 @@
 
 @media (min-width: @desktop-width) {
   .promo {
+    position: static;
+
     &::after {
       content: "";
       position: absolute;
-      top: -175px;
+      top: 0;
       left: 50%;
       right: 0;
       margin: 0;
@@ -159,14 +160,13 @@
       width: calc(50vw - 720px);
       background-color: #65a93c;
       height: 696px;
-      top: -175px;
+      top: 0;
       left: auto;
       right: 0;
     }
   }
 
   .promo__inner {
-    width: 1300px;
     padding: 50px 690px 0 120px;
     background-position: top right;
     margin-bottom: 80px;

@@ -3,31 +3,25 @@
 }
 
 .program__inner {
-  width: 320px;
+  .wrap;
   padding: 0;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
 .program__title {
   .reset;
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
   text-align: left;
-  font-weight: normal;
+  font-weight: 400;
   color: @title-color;
   margin: 16px 0 23px 0;
   padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
-  .program__inner {
-    width: 768px;
-    padding: 0 30px;
-  }
-
   .program__profile {
     padding: 0 40px;
   }
@@ -41,11 +35,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .program__inner {
-    width: 1300px;
-    padding: 0 40px;
-  }
-
   .program__profile {
     padding: 0;
   }
