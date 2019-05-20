@@ -36,12 +36,13 @@
   height: 30px;
   left: 0;
   top: -6px;
-  border: 1px solid @checkbox;
+  border: 1px solid @radio;
   border-radius: 50%;
 }
 
-.profile__radio:hover + label::before {
-  border: 1px solid @checkbox-hover;
+.profile__radio:hover + label::before,
+.profile__radio:focus + label::before {
+  border: 1px solid @radio-hover;
 }
 
 .profile__radio:checked + label::after {
@@ -56,6 +57,19 @@
   border-radius: 50%;
 }
 
+.profile__radio:focus + label {
+  opacity: 0.3;
+}
+
+.profile__radio:disabled + label {
+  color: @checkbox;
+  opacity: 1;
+}
+
+.profile__radio:disabled + label::before {
+  border: 1px solid @radio;
+}
+
 .profile__checkbox + label::before {
   content: "";
   position: absolute;
@@ -65,8 +79,7 @@
   top: -6px;
   border: 1px solid @checkbox;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 1px solid @checkbox-hover;
   }
 
@@ -77,6 +90,10 @@
 
 .profile__checkbox:hover + label::before {
   border: 1px solid @checkbox-hover;
+}
+
+.profile__checkbox:focus + label {
+  opacity: 0.3;
 }
 
 .profile__checkbox:checked + label::after {
@@ -91,6 +108,14 @@
   transform: rotate(-45deg);
 }
 
+.profile__checkbox:disabled + label {
+  color: @checkbox;
+  opacity: 1;
+}
+
+.profile__checkbox:disabled + label::before {
+  border: 1px solid @checkbox;
+}
 
 .profile__fieldset {
   .reset;
@@ -155,7 +180,7 @@
     height: 2px;
     position: absolute;
     background-color: @green-color;
-    top: 12px;
+    top: 14px;
   }
 
   &--comments {
@@ -200,6 +225,19 @@
 
   &::placeholder {
     color: @placeholder;
+    opacity: 1;
+  }
+
+  &:hover {
+    border-color: @input-hover;
+  }
+
+  &:active,
+  &:focus {
+    padding-left: 12px;
+    padding-top: 12px;
+    border: 2px solid @input-active;
+    outline: none;
   }
 }
 
@@ -226,12 +264,12 @@
     width: 384px;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 66px;
+    margin-bottom: 65px;
   }
 
   .profile__cat {
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 54px;
     border: none;
   }
 
@@ -241,7 +279,7 @@
   }
 
   .profile__want {
-    padding: 32px 25px 7px 25px;
+    padding: 32px 25px 3px 27px;
     margin-bottom: 74px;
 
     border: 1px solid @border-color;
@@ -249,7 +287,7 @@
 
   .profile__contacts {
     padding: 0;
-    margin-bottom: 44px;
+    margin-bottom: 45px;
   }
 
   .profile__additionally {
@@ -265,22 +303,29 @@
   }
 
   .profile__textarea {
-    min-height: 172px;
+    min-height: 173px;
     font-size: 20px;
     line-height: 30px;
     padding: 10px 17px;
+
+    &:active,
+    &:focus {
+      padding-left: 16px;
+      padding-top: 9px;
+    }
   }
 
   .profile__label {
-    width: 600px;
+    width: 550px;
     font-size: 20px;
     line-height: 20px;
     padding-left: 60px;
-    margin-bottom: 32px;
+    margin-bottom: 33px;
 
     &--additionaly {
       width: 286px;
       margin-bottom: 51px;
+      padding-left: 59px;
     }
   }
 
@@ -294,15 +339,15 @@
     }
 
     &::after {
-      top: 21px;
+      top: 23px;
     }
 
     &::before {
-      top: 21px;
+      top: 23px;
     }
 
     &--comments {
-      margin-bottom: 75px;
+      margin-bottom: 76px;
 
       &::before {
         right: 264px;
@@ -392,7 +437,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 46px;
+    margin-bottom: 48px;
   }
 
   .profile__cat,
@@ -402,7 +447,7 @@
   }
 
   .profile__label {
-    width: 525px;
+    width: 400px;
 
     &--additionaly {
       width: 245px;
@@ -418,7 +463,7 @@
   }
 
   .profile__contacts {
-    margin-bottom: 47px;
+    margin-bottom: 49px;
   }
 
   .profile__button {
