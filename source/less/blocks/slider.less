@@ -129,8 +129,17 @@
     label {
       font-size: 20px;
       padding: 6px 0;
-      border-bottom: 1px dashed @border-color;
+      border-bottom: 1px dashed @border-dashed;
       cursor: pointer;
+
+      &:hover,
+      &:focus {
+        border-bottom: 1px solid @border-solid;
+      }
+
+      &:active {
+        border-bottom: none;
+      }
     }
   }
 
@@ -184,6 +193,7 @@
 @media (min-width: @desktop-width) {
   .slider {
     margin: 0;
+    padding: 0;
   }
 
   .slider__inner {
