@@ -8,7 +8,7 @@
   border-bottom: 1px solid @border-color;
 }
 
-.site-list a {
+.site-list__item a {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -24,6 +24,13 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.site-list__item--active a {
+  &:hover,
+  &:focus {
+    opacity: 1;
   }
 }
 
